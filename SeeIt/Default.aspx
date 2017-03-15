@@ -14,6 +14,7 @@
             <p>
                 ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
             A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CISE_Connection %>" ProviderName="<%$ ConnectionStrings:CISE_Connection.ProviderName %>" SelectCommand="SELECT &quot;ACTOR&quot;, &quot;MOVIE_ACTED_IN&quot;, &quot;MOVIE_ACTED_DOR&quot; FROM &quot;ACTS&quot;"></asp:SqlDataSource>
             </p>
             <p>
                 <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
