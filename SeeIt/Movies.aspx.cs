@@ -11,7 +11,7 @@ namespace SeeIt
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string[] movieList = { "movie1", "movie2", "movie3" };
         }
     }
 }

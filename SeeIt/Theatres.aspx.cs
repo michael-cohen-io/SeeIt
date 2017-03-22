@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace SeeIt
 {
-    public partial class Movies : Page
+    public partial class Theatres : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
