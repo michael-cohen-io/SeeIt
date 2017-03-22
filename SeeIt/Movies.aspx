@@ -3,12 +3,12 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Movies out now</h2>
     <p>
-        <asp:Image ID="Image1" src="http://t1.gstatic.com/images?q=tbn:ANd9GcRPoMqL1vglrh7OF_69pT8gYMYnYaq1r7WfPMcD587V9uOR_hW2" runat="server" />
+        <asp:ListView ID="ListView1" runat="server" DataSourceID="MovieDB">
+        </asp:ListView>
+        <asp:SqlDataSource ID="MovieDB" runat="server" ConnectionString="<%$ ConnectionStrings:CISE_Connection %>" ProviderName="<%$ ConnectionStrings:CISE_Connection.ProviderName %>" SelectCommand="SELECT &quot;POSTER_URL&quot;, &quot;TITLE&quot; FROM &quot;MOVIE&quot; WHERE (&quot;POSTER_URL&quot; IS NOT NULL) ORDER BY &quot;DATE_OF_RELEASE&quot; DESC"></asp:SqlDataSource>
     </p>
     
 <p>
-    <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1">
-    </asp:GridView>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
 </p>
     
